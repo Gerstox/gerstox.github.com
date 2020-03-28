@@ -1,0 +1,68 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+header {
+    background-color: #58606e;
+    color: white;
+    text-align: center;
+    padding: 16px;
+}
+h1 {
+    display: inline-block; 
+    width:3 00px;
+    font-weight: bold;
+}
+p.p-header {
+    display: inline-block; 
+    width: 300px;
+    font-weight: 200;
+}
+div.subtitle {
+    background-color: #e6e6e6;
+    text-align: center;
+    padding: 10px;
+}
+div.section-color {
+    width: 960px;
+    background-color: #f7f7f7;
+    margin: 0 auto;
+}
+div.education {
+    display: inline-block;
+    width: 68%;
+    vertical-align: top;
+}
+h3.title-h3 {
+    font-size: 36px;
+    font-weight: 700;
+}
+.detail-title {
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    margin-top: 36px;
+}
+div.img-cv {
+    display: inline-block;
+    width: 30%;
+    margin-top: 20px;
+}
+.mt-li {
+    margin-top:16px;
+}
+
+.mt-70 {
+    margin-top: 70px;
+}
+.ta-center {
+    text-align: center;
+}
+.w-400 {
+    width: 400px;
+    display: inline-block;
+}
+.ul-mp {
+    margin-top: 12px;
+    padding: 0;
+}
