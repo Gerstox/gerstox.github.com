@@ -9,7 +9,7 @@ links.forEach(function(link){
         content.classList.add("fadeOut");
         content.classList.add("animated");
         setTimeout(function(){
-            location.href = "/";
+            location.href = "/boletines";
         }, 900);
     });
 });
