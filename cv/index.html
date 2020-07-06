@@ -48,18 +48,24 @@
                         <div class="row detail">
                             <div class="col-12 col-md-6">
                                 <div class="detail-title">Perfil profesional</div>
-                                <div class="detail-description">
-                                    <p>Soy un profesional que le gustan los retos, aprendo continuamente nuevas tecnologías, tendencias y métodos de trabajo los cuales mejoran la calidad del mismo.</p>
-                                    <p>Gran responsabilidad y compromiso, además de una amplia experiencia en el área de tecnologías de la información.</p>
+                                <div id="summary-professional-profile">
+                                    <div id="collapseProfessional" class="collapse detail-description">
+                                        <p>Soy un profesional que le gustan los retos, aprendo continuamente nuevas tecnologías, tendencias y métodos de trabajo los cuales mejoran la calidad del mismo.</p>
+                                        <p>Gran responsabilidad y compromiso, además de una amplia experiencia en el área de tecnologías de la información.</p>
+                                    </div>
+                                    <a class="collapsed btn btn-outline-main btn-sm mt-1" data-toggle="collapse" href="#collapseProfessional" aria-expanded="false" aria-controls="collapseProfessional"></a>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6">
                                 <div class="detail-title">Perfil personal</div>
-                                <div class="detail-description">
-                                    <p>Habilidad para tratar con distintos tipos de público.</p>
-                                    <p>Habilidad en comunicación con el equipo de trabajo.</p>
-                                    <p>Capacidad para resolución de  problemas.</p>
-                                    <p>Rápido aprendizaje, creativo, innovador, enfoque en situaciones de estrés.</p>
+                                <div id="summary-personal-profile">
+                                    <div id="collapsePersonal" class="collapse detail-description">
+                                        <p>Habilidad para tratar con distintos tipos de público.</p>
+                                        <p>Habilidad en comunicación con el equipo de trabajo.</p>
+                                        <p>Capacidad para resolución de  problemas.</p>
+                                        <p>Rápido aprendizaje, creativo, innovador, enfoque en situaciones de estrés.</p>
+                                    </div>
+                                    <a class="collapsed btn btn-outline-main btn-sm mt-1" data-toggle="collapse" href="#collapsePersonal" aria-expanded="false" aria-controls="collapsePersonal"></a>
                                 </div>
                             </div>
                         </div>
@@ -67,8 +73,8 @@
                     <hr class="division-hr">
                 </div>
                 
-                <div class="row mt-md-4 m-2em">
-                    <div class="m-2em  col-12 col-md-6">
+                <div class="row mt-md-1 m-2em">
+                    <div class="m-2em  col-12 col-md-4">
                         <div>
                             <h3 class="title-h3">
                                 <i class="fa fa-graduation-cap customize-icon" aria-hidden="true"></i>
@@ -83,20 +89,43 @@
                         </div>
                     </div>
                     <hr class="division-hr d-md-none">
-                    <div class="m-2em  col-12 col-md-6">
+                    <div class="m-2em  col-12 col-md-4">
                         <div>
                             <h3 class="title-h3">
-                                <i class="fa fa-graduation-cap customize-icon" aria-hidden="true"></i>
+                                <i class="fa fa-thumb-tack customize-icon" aria-hidden="true"></i>
                                 Contacto
                             </h3>
                             <div class="detail">
-                                <div class="detail-title">Correo electrónico</div>
+                                <div class="detail-title mb-0">Correo electrónico</div>
                                 <div class="detail-description">
                                     <p>pinedagerson1993@gmail.com</p>
                                 </div>
-                                <div class="detail-title">Teléfono</div>
+                                <div class="detail-title mb-0">Teléfono</div>
                                 <div class="detail-description">
                                     <p>+58 (412) 527-8897</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="division-hr d-md-none">
+                    <div class="m-2em  col-12 col-md-4">
+                        <div>
+                            <h3 class="title-h3">
+                                <i class="fa fa-info customize-icon" aria-hidden="true"></i>
+                                Más información
+                            </h3>
+                            <div class="detail">
+                                <div class="detail-title mb-0">Fecha de nacimiento</div>
+                                <div class="detail-description">
+                                    <p>31 de diciembre de 1.993</p>
+                                </div>
+                                <div class="detail-title mb-0">Nacionalidad</div>
+                                <div class="detail-description">
+                                    <p>Venezolano</p>
+                                </div>
+                                <div class="detail-title mb-0">Estado civil</div>
+                                <div class="detail-description">
+                                    <p>Soltero</p>
                                 </div>
                             </div>
                         </div>
@@ -104,7 +133,7 @@
                     <hr class="division-hr">
                 </div>
                 
-                <div class="row mt-md-4 m-2em mb-4">
+                <div class="row mt-md-1 m-2em mb-4">
                     <div class="m-2em  col-12">
                         <h3 class="title-h3">
                             <i class="fa fa-briefcase customize-icon" aria-hidden="true"></i>
@@ -148,7 +177,7 @@
                     </div>
                 </div>
                 <hr class="division-hr">
-                <div class="row mt-md-4 m-2em">
+                <div class="row mt-md-1 m-2em">
                     <div class="m-2em  col-12">
                         <h3 class="title-h3">
                             <i class="fa fa-hand-pointer-o customize-icon" aria-hidden="true"></i>
@@ -208,46 +237,173 @@
                         Competencias
                     </h3>
                     <div class="competencies-mobile">
-                        <!-- Tab links-->
-                        <div class="tab">
-                            <button  id="defaultOpen" class="tablinks" onclick="openCompetence(event, 'backend')">Backend</button>
-                            <button class="tablinks" onclick="openCompetence(event, 'frontend')">Frontend</button>
-                            <button class="tablinks" onclick="openCompetence(event, 'databases')">Bases de datos</button>
-                            <button class="tablinks" onclick="openCompetence(event, 'other-competencies')">Otras competencias</button>
+                    <!--New competences-->
+                    <div class="tab-v">
+                        <button id="defaultOpen-v" class="tablinks-v" onclick="openC(event, 'back')">Backend</button>
+                        <button class="tablinks-v" onclick="openC(event, 'front')">Frontend</button>
+                        <button class="tablinks-v" onclick="openC(event, 'db')">Bases de datos</button>
+                        <button class="tablinks-v" onclick="openC(event, 'oc')">Otras competencias</button>
+                    </div>
+                      
+                    <div id="back" class="tabcontent-v">
+                        <div class="competence-item" title="Conocimientos altos a un 90%">Python
+                            <i class="fa fa-star-half-o fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
                         </div>
-                        <!-- Tab contents -->
-                        <div id="backend" class="tabcontent">
-                            <div class="competence-item">Python</div>
-                            <div class="competence-item">NodeJS</div>
-                            <div class="competence-item">PHP</div>
-                            <div class="competence-item">C#</div>
-                            <div class="competence-item">Java</div>
+                        <div class="competence-item" title="Conocimientos altos a un 80%">NodeJS
+                            <i class="fa fa-star-o fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>                            
                         </div>
-                        <div id="frontend" class="tabcontent">
-                            <div class="competence-item">React</div>
-                            <div class="competence-item">Angular</div>
-                            <div class="competence-item">Foundation</div>
-                            <div class="competence-item">HTML</div>
-                            <div class="competence-item">CSS</div>
-                            <div class="competence-item">Javascript</div>
+                        <div class="competence-item" title="Conocimientos medios a un 70%">PHP
+                            <i class="fa fa-star-o fl-c"></i>
+                            <i class="fa fa-star-half-o fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>                            
                         </div>
-                        <div id="databases" class="tabcontent">
-                            <div class="competence-item">SQL Server</div>
-                            <div class="competence-item">Postgresql</div>
-                            <div class="competence-item">Mysql</div>
-                            <div class="competence-item">Oracle</div>
-                            <div class="competence-item">MongoDB</div>
+                        <div class="competence-item" title="Conocimientos medios a un 70%">C#
+                            <i class="fa fa-star-o fl-c"></i>
+                            <i class="fa fa-star-half-o fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>                            
                         </div>
-                        <div id="other-competencies" class="tabcontent">
-                            <div class="competence-item">Git</div>
-                            <div class="competence-item">GitLab</div>
-                            <div class="competence-item">Docker</div>
-                            <div class="competence-item">Wordpress</div>
-                            <div class="competence-item">Drupal</div>
+                        <div class="competence-item" title="Conocimientos medios a un 50%">Java
+                            <i class="fa fa-star-o fl-c"></i>
+                            <i class="fa fa-star-o fl-c"></i>
+                            <i class="fa fa-star-half-o fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>                            
+                        </div>
+                    </div>
+                      
+                    <div id="front" class="tabcontent-v">
+                        <div class="competence-item" title="Conocimientos medios a un 60%">React
+                            <i class="fa fa-star-o fl-c"></i>
+                            <i class="fa fa-star-o fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>                            
+                        </div>
+                        <div class="competence-item" title="Conocimientos altos a un 90%">Angular
+                            <i class="fa fa-star-half-o fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                        </div>
+                        <div class="competence-item" title="Conocimientos altos a un 90%">Foundation
+                            <i class="fa fa-star-half-o fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                        </div>
+                        <div class="competence-item" title="Conocimientos altos a un 100%">HTML
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                        </div>
+                        <div class="competence-item" title="Conocimientos altos a un 100%">CSS
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                        </div>
+                        <div class="competence-item" title="Conocimientos altos a un 90%">Javascript
+                            <i class="fa fa-star-half-o fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                        </div>
+                    </div>
+                      
+                    <div id="db" class="tabcontent-v">
+                        <div class="competence-item" title="Conocimientos medios a un 60%">SQL Server
+                            <i class="fa fa-star-o fl-c"></i>
+                            <i class="fa fa-star-o fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>                            
+                        </div>
+                        <div class="competence-item" title="Conocimientos altos a un 90%">Postgresql
+                            <i class="fa fa-star-half-o fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                        </div>
+                        <div class="competence-item" title="Conocimientos altos a un 90%">Mysql
+                            <i class="fa fa-star-half-o fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                        </div>
+                        <div class="competence-item" title="Conocimientos medios a un 70%">Oracle
+                            <i class="fa fa-star-o fl-c"></i>
+                            <i class="fa fa-star-half-o fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                        </div>
+                        <div class="competence-item" title="Conocimientos altos a un 90%">MongoDB
+                            <i class="fa fa-star-o fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
                         </div>
                     </div>
 
-
+                    <div id="oc" class="tabcontent-v">
+                        <div class="competence-item" title="Conocimientos altos a un 100%">Git
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                        </div>
+                        <div class="competence-item" title="Conocimientos altos a un 80%">GitLab
+                            <i class="fa fa-star-o fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                        </div>
+                        <div class="competence-item" title="Conocimientos altos a un 80%">Docker
+                            <i class="fa fa-star-o fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                        </div>
+                        <div class="competence-item" title="Conocimientos altos a un 90%">Wordpress
+                            <i class="fa fa-star-half-o fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                        </div>
+                        <div class="competence-item" title="Conocimientos medios a un 70%">Drupal
+                            <i class="fa fa-star-o fl-c"></i>
+                            <i class="fa fa-star-half-o fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                            <i class="fa fa-star fl-c"></i>
+                        </div>
+                    </div>
+                    <!--End new competences-->
                     <div class="competencies">
                         <div class="d-flex justify-content-between">
                             <div class="w-400">
@@ -412,7 +568,7 @@
                             </div>
                         </div>
                     </div>
-                    <hr class="division-hr">
+                    <hr class="division-hr d-ib">
                 </div>
                 
                 <div class="m-2em ">

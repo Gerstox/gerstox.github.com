@@ -93,8 +93,8 @@ h3.h3-first {
     margin-top: 0.5em;
 }
 h3.title-h3 {
-    margin-bottom: 0;
-    font-size: 1.5em;
+    margin: 0.3em 0;
+    font-size: 2em;
     font-weight: 700;
     color: #5C73F2;
 }
@@ -194,16 +194,15 @@ div.img-cv {
     padding: 0.5em;
     font-size: 1.1em;
     font-weight: bold;
-    background-color: #f7f7f7;
+    background-color: transparent;
     border-bottom: 1px solid #5C73F2;
     color: #5C73F2;
     /*text-shadow: 1px 1px #828282;*/
 }
 .competence-item:hover,  .competence-item:focus {
     background: #3E38F2;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #0029FA, #829FD9, white);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #0029FA, #829FD9, white); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: white;
+    background: -webkit-linear-gradient(to right, #d2d2d2, #d2d2d2, #829FD9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d2d2d2, #d2d2d2, #829FD9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .competencies {
     display: none;
@@ -294,6 +293,93 @@ div.col-12 {
 .column-table {
     vertical-align: middle !important;
 }
+
+/* COLLAPSED*/
+#summary-professional-profile div.collapse:not(.show),
+#summary-personal-profile div.collapse:not(.show) {
+    height: 40px !important;
+    overflow: hidden;
+    
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+}
+  
+#summary-professional-profile div.collapsing, 
+#summary-personal-profile div.collapsing {
+    min-height: 40px !important;
+}
+  
+#summary-professional-profile a.collapsed:after,
+#summary-personal-profile a.collapsed:after  {
+    content: 'Mostrar más';
+}
+  
+#summary-professional-profile a:not(.collapsed):after,
+#summary-personal-profile a:not(.collapsed):after {
+    content: 'Mostrar menos';
+}
+/*END COLLAPSED*/
+.btn-outline-main {
+    color: #0029FA;
+    border-color: #0029FA;
+}
+
+/*NEW TAB STYLES*/
+/* Style the tab */
+.tab-v {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 40%;
+    height: 300px;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab-v button {
+    color: #5C73F2;
+    font-weight: bold;
+    font-size: 1.1em;
+    display: block;
+    padding: 0.7em;
+    width: 100%;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    background-color: #f7f7f7;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab-v button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current "tab button" class */
+  .tab-v button.active {
+    background: #3E38F2;
+    background: -webkit-linear-gradient(to right, #0029FA, #829FD9, #d2d2d2);
+    background: linear-gradient(to right, #0029FA, #829FD9, #d2d2d2);
+    color: white;
+  }
+  
+  /* Style the tab content */
+  .tabcontent-v {
+    float: left;
+    padding: 0;
+    border: 1px solid #ccc;
+    width: 60%;
+    border-left: none;
+    height: 300px;
+    background: #829FD9;
+    background: -webkit-linear-gradient(to right,#d2d2d2, white, white);
+    background: linear-gradient(to right,#d2d2d2, white, white);
+  }
+  /*END NEW TAB STYLES*/
+.d-ib {
+    display: inline-block;
+}
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
@@ -303,7 +389,7 @@ div.col-12 {
   from {opacity: .4}
   to {opacity: 1}
 }
-/***END SLIDER */
+
 @media (min-width: 576px) {
     .seccion-principal{
         max-width: 80%;
@@ -344,6 +430,7 @@ div.col-12 {
         float: right;
     }
     h3.title-h3 {
+        margin: 0.25em 0 0.5em 0;
         font-size: 2em;
     }
     .detail-description {
@@ -374,6 +461,22 @@ div.col-12 {
         background: -webkit-linear-gradient(to right, #0029FA, #829FD9, white);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #0029FA, #829FD9, white); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         color: white;
+    }
+    .btn-outline-main {
+        display: none;
+    }
+    #summary-professional-profile div.collapse:not(.show),
+    #summary-personal-profile div.collapse:not(.show) {
+        height: auto !important;
+        overflow: auto;
+        display: initial;
+        -webkit-line-clamp: initial;
+        -webkit-box-orient: initial; 
+    }
+    
+    #summary-professional-profile div.collapsing, 
+    #summary-personal-profile div.collapsing {
+        min-height: auto !important;
     }
 }
 @media (min-width: 576px) {
