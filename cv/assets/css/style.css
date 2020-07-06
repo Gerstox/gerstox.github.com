@@ -112,6 +112,7 @@ h3.title-h3 {
 .fl-c {
     float: right;
     color: #ffc107;
+    font-size: 0.8em !important;
 }
 .detail-description {
     font-size: 1em;
@@ -477,6 +478,9 @@ div.col-12 {
     #summary-professional-profile div.collapsing, 
     #summary-personal-profile div.collapsing {
         min-height: auto !important;
+    }
+    .fl-c {
+        font-size: 1em;
     }
 }
 @media (min-width: 576px) {
